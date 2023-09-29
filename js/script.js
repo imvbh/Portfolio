@@ -84,3 +84,28 @@ lightModeIcon.onclick = () => {
   lightModeIcon.classList.toggle("bxs-moon");
   document.body.classList.toggle("dark-mode");
 };
+
+
+
+const scrollupButton = document.querySelector('.scrollup');
+
+window.addEventListener('scroll', () => {
+  // Check if the user has scrolled past the home section (adjust this value as needed)
+  const scrollThreshold = 200; // Adjust this value as needed
+
+  if (window.scrollY > scrollThreshold) {
+    scrollupButton.classList.add('show-scroll');
+  } else {
+    scrollupButton.classList.remove('show-scroll');
+  }
+});
+
+scrollupButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  
+  // Scroll to the top of the page smoothly
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
