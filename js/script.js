@@ -1,10 +1,10 @@
 // menu icon bar
-let menuIcon = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+let menuIcon = document.querySelector(".nav__toggle");
+let navbar = document.querySelector(".nav__menu");
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
-  navbar.classList.toggle("active");
+  navbar.classList.toggle("show-menu");
 };
 
 // scroll section active
@@ -20,85 +20,67 @@ window.onscroll = () => {
 
     if (top >= offset && top < offset + height) {
       navlinks.forEach((links) => {
-        links.classList.remove("active");
+        links.classList.remove("active-link");
         document
           .querySelector("header nav a[href*=" + id + "]")
-          .classList.add("active");
+          .classList.add("active-link");
       });
     }
   });
-
-  // sticky navbar
-
-  let header = document.querySelector(".header");
-
-  header.classList.toggle("sticky", window.scrollY > 100);
-
-  // remove menu on scroll or click
-  menuIcon.classList.remove("bx-x");
-  navbar.classList.remove("active");
 };
+
+// Show skills description
+// Get all "View More" buttons
+const viewMoreButtons = document.querySelectorAll(".services__button");
+
+// Get all modal containers
+const modalContainers = document.querySelectorAll(".services__modal");
+
+// Add a click event listener to each "View More" button
+viewMoreButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    // Display the corresponding modal container
+    modalContainers[index].classList.add("active-modal");
+  });
+});
+
+// Add click event listener to close modal when the close button is clicked
+const closeButtons = document.querySelectorAll(".services__modal-close");
+closeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Hide the modal container
+    modalContainers.forEach((modal) => {
+      modal.classList.remove("active-modal");
+    });
+  });
+});
+
+
+const serviceButtons = document.querySelectorAll(".services__button");
+const modalCloses = document.querySelectorAll(".services__modal-close");
+
+serviceButtons.forEach(function (button, index) {
+  button.addEventListener("click", function () {
+    const modal = document.querySelectorAll(".services__modal")[index];
+    modal.classList.add("active-modal");
+  });
+});
+
+modalCloses.forEach(function (close) {
+  close.addEventListener("click", function () {
+    const modals = document.querySelectorAll(".services__modal");
+    modals.forEach(function (modal) {
+      modal.classList.remove("active-modal");
+    });
+  });
+});
+
+
 
 // dark light mode
 let lightModeIcon = document.querySelector("#lightMode-icon");
 
 lightModeIcon.onclick = () => {
   lightModeIcon.classList.toggle("bxs-moon");
-  document.body.classList.toggle("light-mode");
+  document.body.classList.toggle("dark-mode");
 };
-
-// swiper script
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 25,
-  loop: false,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 2,
-    },
-    950: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-/**
- * SCROLL REVEAL
- */
-
-const revealElements = document.querySelectorAll("[data-reveal]");
-const revealDelayElements = document.querySelectorAll("[data-reveal-delay]");
-
-const reveal = function () {
-  for (let i = 0, len = revealElements.length; i < len; i++) {
-    if (
-      revealElements[i].getBoundingClientRect().top <
-      window.innerHeight / 1.2
-    ) {
-      revealElements[i].classList.add("revealed");
-    }
-  }
-};
-
-for (let i = 0, len = revealDelayElements.length; i < len; i++) {
-  revealDelayElements[i].style.transitionDelay =
-    revealDelayElements[i].dataset.revealDelay;
-}
-
-window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal);
