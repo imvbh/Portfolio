@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap);
 :root {
   --header-height: 3rem;
-  --title-color: #333333;
+  --title-color: #f1f1f1;
   --title-color-dark: #754ef9;
-  --text-color: #888888;
-  --body-color: #fafafa;
-  --container-color: #fff;
+  --text-color: #aaaaaa;
+  --body-color: #0f0f0f;
+  --container-color: #272727;
   --body-font: "Nunito", sans-serif;
   --big-font-size: 3rem;
   --h1-font-size: 2.25rem;
@@ -45,11 +45,11 @@
 }
 
 .dark-mode {
-  --title-color: #f1f1f1;
+  --title-color: #333333;
   --title-color-dark: #754ef9;
-  --text-color: #aaaaaa;
-  --body-color: #0f0f0f;
-  --container-color: #272727;
+  --text-color: #888888;
+  --body-color: #fafafa;
+  --container-color: #fff;
 }
 
 * {
@@ -169,8 +169,8 @@ img {
 }
 @media screen and (max-width: 768px) {
   body {
-    margin: 0 3rem;
-    margin: 0 var(--header-height) 0;
+    margin: 0 1rem;
+    margin: 0 1rem 0;
   }
   .section {
     padding: 2rem 0 4rem;
@@ -208,6 +208,9 @@ img {
   justify-content: space-between;
   z-index: 100;
 }
+
+
+
 .nav__logo,
 .nav__toggle {
   color: var(--title-color);
@@ -233,11 +236,16 @@ img {
   display: none;
 }
 
+.nav-buttons {
+  display: flex;
+}
+
 #lightMode-icon {
   font-size: 1.3rem;
   font-weight: var(--font-medium);
   transition: 0.3s;
   color: var(--text-color);
+  padding-right: 0.75rem;
 }
 
 .active-link,
@@ -270,7 +278,6 @@ img {
 
   .nav__toggle{
     z-index: 100;}
-
 
   .show-menu {
     top: 3rem;
@@ -653,6 +660,7 @@ img {
   border: 1px #000;
   padding: 6rem 0 2rem 2.5rem;
   position: relative;
+  min-width: 4rem;
 }
 .services__icon {
   color: var(--title-color);
@@ -970,6 +978,11 @@ img {
     font-size: 1rem;
     padding: 0.25rem;
   }
+
+  .footer{
+    margin: 0;
+  }
+
 }
 .scrollup {
   background-color: var(--title-color);
@@ -1003,7 +1016,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .show-scroll {
-    bottom: 4rem;
+    bottom: 3rem;
   }
 }
 @media screen and (max-width: 350px) {
