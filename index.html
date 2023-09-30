@@ -7,31 +7,16 @@
   <title>Portfolio</title>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut icon" type="image/jpg" href="/assets/freelancer.png"/>
   <link href="./css/styles.css" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'Open Sans Regular';
-      font-style: normal;
-      font-weight: 400;
-      src: url('moz-extension://b41ea880-b973-407d-835d-2f77142184df/fonts/open_sans/open-sans-v18-latin-regular.woff');
-    }
-  </style>
-  <style>
-    @font-face {
-      font-family: 'Open Sans Bold';
-      font-style: normal;
-      font-weight: 800;
-      src: url('moz-extension://b41ea880-b973-407d-835d-2f77142184df/fonts/open_sans/open-sans-v18-latin-800.woff');
-    }
-  </style>
 </head>
 
 <body data-new-gr-c-s-check-loaded="8.907.0" data-gr-ext-installed="">
   <div id="root">
     <header class="header">
-      <nav class="nav container"><a href="index.html" class="nav__logo"><b>Vaibhav</b> Dhumale</a>
+      <nav class="nav container"><a href="index.html" class="nav__logo" data-reveal="top" ><b>Vaibhav</b> Dhumale</a>
         <div class="nav__menu">
-          <ul class="nav__list grid">
+          <ul class="nav__list grid" data-reveal="top" data-reveal-delay="0.25s">
             <li class="nav__item"><a href="#home" class="nav__link active-link"><svg stroke="currentColor" fill="none"
                   stroke-width="0" viewBox="0 0 24 24" class="nav__icon" height="1em" width="1em"
                   xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +54,7 @@
                 </svg>Contact</a></li>
 
           </ul>
-        </div><div class="nav-buttons">
+        </div><div class="nav-buttons" data-reveal="top">
         <div class="bx bx-sun" id="lightMode-icon"></div>
         <div class="nav__toggle bx bx-menu-alt-right"></div>
         </div>
@@ -79,7 +64,7 @@
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__content grid">
-            <div class="home__social"><a href="https://instagram.com/imvbh" class="home__social-icon" target="_blank"><i
+            <div class="home__social"data-reveal="top" data-reveal-delay="0.75s"><a href="https://instagram.com/imvbh" class="home__social-icon" target="_blank"><i
                   class='bx bxl-instagram' stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round" height="1.2em" width="1.2em">
                 </i>
@@ -91,13 +76,13 @@
                   stroke-linejoin="round" height="1em" width="1em">
                 </i></a>
             </div>
-            <img class="home__img" src="">
+            <img class="home__img" data-reveal="top" data-reveal-delay="1s" src="assets/20230131_030814-removebg.png">
             <div class="home__data">
-              <h1 class="home__title">Vaibhav Dhumale</h1>
-              <h3 class="home__subtitle"><span id="elementh3"></h3>
-              <p class="home__description">A TY Student and Freelancer with a passion for problem-solving and a drive
+              <h1 class="home__title"data-reveal="top">Vaibhav Dhumale</h1>
+              <h3 class="home__subtitle" data-reveal="top" data-reveal-delay="0.25s"><span id="elementh3"></h3>
+              <p class="home__description"data-reveal="top" data-reveal-delay="0.5s">A TY Student and Freelancer with a passion for problem-solving and a drive
                 for innovation. <br>Wanna collaborate and create something great?</p><a href="#contact"
-                class="button button--flex">Let's Talk<svg class="button__icon" xmlns="http://www.w3.org/2000/svg"
+                class="button button--flex"data-reveal="top" data-reveal-delay="1.5s">Let's Talk<svg class="button__icon" xmlns="http://www.w3.org/2000/svg"
                   width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z"
@@ -128,10 +113,10 @@
       </section>
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2><span class="section__subtitle">A short introduction</span>
-        <div class="about__container container grid"><img src="Images/freelancer-banner.png" alt="about"
+        <div class="about__container container grid"data-reveal="top"><img src="assets/freelancer-banner.png" alt="about"
             class="about__img">
           <div class="about__data">
-            <div class="about__info grid">
+            <div class="about__info grid" data-reveal="top" data-reveal-delay="0.25s">
               <div class="about__box"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
                   class="about__icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -156,10 +141,10 @@
                 <h3 class="about__title">Clients</h3><span class="about__subtitle">5+ Clients</span>
               </div>
             </div>
-            <p class="about__description">Hey there! I'm Vaibhav Dhumale, a motivated student with a passion for
+            <p class="about__description"data-reveal="top" data-reveal-delay="0.5s">Hey there! I'm Vaibhav Dhumale, a motivated student with a passion for
               problem-solving and creativity. My goal is to make a positive impact in engineering and technology. Also,
-              I love thriving on learning and personal growth.</p><a download=""
-              href="Images/Vaibhav+Dhumale_Resume.pdf" class="button button--flex">Download CV<svg class="button__icon"
+              I love thriving on learning and personal growth.</p><a data-reveal="top" data-reveal-delay="0.75s" download=""
+              href="assets/Vaibhav+Dhumale_Resume.pdf" class="button button--flex">Download CV<svg class="button__icon"
                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path
                   d="M15.25 22.7502H9.25C3.82 22.7502 1.5 20.4302 1.5 15.0002V9.00024C1.5 3.57024 3.82 1.25024 9.25 1.25024H14.25C14.66 1.25024 15 1.59024 15 2.00024C15 2.41024 14.66 2.75024 14.25 2.75024H9.25C4.64 2.75024 3 4.39024 3 9.00024V15.0002C3 19.6102 4.64 21.2502 9.25 21.2502H15.25C19.86 21.2502 21.5 19.6102 21.5 15.0002V10.0002C21.5 9.59024 21.84 9.25024 22.25 9.25024C22.66 9.25024 23 9.59024 23 10.0002V15.0002C23 20.4302 20.68 22.7502 15.25 22.7502Z"
@@ -180,7 +165,7 @@
       <section class="skills section" id="about">
         <h2 class="section__title">Skills</h2><span class="section__subtitle">Technical Level</span>
         <div class="skills__container container grid">
-          <div class="skills__content">
+          <div class="skills__content" data-reveal="top" data-reveal-delay="0.25s">
             <h3 class="skills__title">Languages</h3>
             <div class="skills__box">
               <div class="skills__group">
@@ -249,7 +234,7 @@
               </div>
             </div>
           </div>
-          <div class="skills__content">
+          <div class="skills__content" data-reveal="top" data-reveal-delay="0.75s">
             <h3 class="skills__title">Tools and Software</h3>
             <div class="skills__box">
               <div class="skills__group">
@@ -322,8 +307,8 @@
       </section>
       <section class="services section" id="services">
         <h2 class="section__title">Services</h2><span class="section__subtitle">Create + Collaborate</span>
-        <div class="services__container container grid">
-          <div class="services__content">
+        <div class="services__container container grid" >
+          <div class="services__content" >
             <div><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="services__icon"
                 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -345,9 +330,9 @@
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
                 </svg>
-                <h3 class="services__modal-title">Developer</h3>
-                <p class="services__modal-description">Over 3 years of experience in web development providing quality
-                  work.</p>
+                <h3 class="services__modal-title"><b>Developer</b></h3>
+                <p class="services__modal-description">Over 6 months of experience in web and app development.
+                </p>
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -355,7 +340,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Web page and app development</p>
+                    <p class="services__modal-info">Completed a 3 month course on Responsive Web Development</p>
                   </li>
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -363,7 +348,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Integrate creative colloboration</p>
+                    <p class="services__modal-info">Collaborated and contributed in 2 Web projects.</p>
                   </li>
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -371,7 +356,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Provide product mockups</p>
+                    <p class="services__modal-info">Stick around to find some more projects in future</p>
                   </li>
                 </ul>
               </div>
@@ -399,9 +384,8 @@
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
                 </svg>
-                <h3 class="services__modal-title">Designer</h3>
-                <p class="services__modal-description">Over 2 years of experience in UI/UX design providing quality
-                  work.</p>
+                <h3 class="services__modal-title"><b>Editor</b></h3>
+                <p class="services__modal-description">1 year of hands-on experience with DaVinci Resolve and Audacity.</p>
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -409,7 +393,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Create a user friendly interface</p>
+                    <p class="services__modal-info">On hand experience with DaVinci and Audacity with mini projects</p>
                   </li>
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -417,7 +401,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Develop with a minimal approach</p>
+                    <p class="services__modal-info">Tailored editing to match your brand's style</p>
                   </li>
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -425,7 +409,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Design with accessibility in mind</p>
+                    <p class="services__modal-info">Can work with short videos, vlogs, a podcasts or any mini projects</p>
                   </li>
                 </ul>
               </div>
@@ -453,8 +437,8 @@
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                     clip-rule="evenodd"></path>
                 </svg>
-                <h3 class="services__modal-title">Branding</h3>
-                <p class="services__modal-description">Over 3 years experience in branding providing quality work.</p>
+                <h3 class="services__modal-title"><b>Writer</b></h3>
+                <p class="services__modal-description">About year's worth of experience in content writing.</p>
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -462,7 +446,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Company logo and branding</p>
+                    <p class="services__modal-info">Majorly worked with SMM agencies.</p>
                   </li>
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -470,7 +454,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Custom website and landing page</p>
+                    <p class="services__modal-info">Made and managed content for different clients.</p>
                   </li>
                   <li class="services__modal-service"><svg stroke="currentColor" fill="none" stroke-width="0"
                       viewBox="0 0 24 24" class="services__modal-icon" height="1em" width="1em"
@@ -478,7 +462,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <p class="services__modal-info">Design product mockups</p>
+                    <p class="services__modal-info">Experienced in short-hands, academic content and SEO work.</p>
                   </li>
                 </ul>
               </div>
@@ -494,7 +478,7 @@
               class=" project__item">Ongoing</span>
           </div> -->
           <div class="project__container container grid">
-            <div class="project__card" data-category="all website"><img class="project__img" src="Images/image_143.png" alt="">
+            <div class="project__card" data-category="all website"><img class="project__img" src="assets/image_143.png" alt="">
               <h3 class="project__title">FlipClock</h3><a href="https://imvbh.github.io/FlipClock/"
                 class="project__button">Demo <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
                   class="project__button-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -502,7 +486,7 @@
                   </path>
                 </svg></a>
             </div>
-            <div class="project__card" data-category="all website"><img class="project__img" src="Images/WeatherNow.png" alt="">
+            <div class="project__card" data-category="all website"><img class="project__img" src="assets/WeatherNow.png" alt="">
               <h3 class="project__title">WeatherNow</h3><a href="https://imvbh.github.io/WeatherNow/"
                 class="project__button">Demo <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24"
                   class="project__button-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -510,7 +494,7 @@
                   </path>
                 </svg></a>
             </div>
-            <div class="project__card" data-category="all apps"><img class="project__img" src="Images/androidappdevelopmenttools.webp" alt="">
+            <div class="project__card" data-category="all apps"><img class="project__img" src="assets/androidappdevelopmenttools.webp" alt="">
               <h3 class="project__title">Card Diary</h3><a href="#" class="project__button">Coming Soon <svg
                   stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="project__button-icon"
                   height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -518,7 +502,7 @@
                   </path>
                 </svg></a>
             </div>
-            <div class="project__card"  data-category="all ongoing"><img class="project__img" src="Images/Snake.jpg" alt="">
+            <div class="project__card"  data-category="all ongoing"><img class="project__img" src="assets/Snake.jpg" alt="">
               <h3 class="project__title">Snake Game</h3><a href="#" class="project__button">Coming Soon <svg
                   stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="project__button-icon"
                   height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
