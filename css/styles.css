@@ -824,19 +824,26 @@ img {
 
 
 .contact__container {
-  -webkit-column-gap: 6rem;
-  column-gap: 6rem;
-  grid-template-columns: repeat(2, -webkit-max-content);
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(1, -webkit-max-content);
+  grid-template-columns: repeat(1, max-content);
   justify-content: center;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
 }
+
+
 .contact__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
   text-align: center;
+
 }
+
+.contact__titlep {
+  justify-items: center;
+  align-items: center;
+}
+
 .contact__info {
   grid-row-gap: 1rem;
   display: grid;
