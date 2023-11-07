@@ -1,6 +1,6 @@
 # Portfolio
 
-View here: https://imvbh.github.io/
+View here: https://imvbh.github.io/Portfolio/
 
 - A portfolio made upon being heavily inspired by Codehal and Cryptic Coder on YouTube **NO copyright infringement intended**.
 - Major difference: They made the sites using node.js whereas this portfolio is entirely made out of html,css and javascript & day/night mode applied.
