@@ -228,9 +228,6 @@ img {
   justify-content: space-between;
   z-index: 100;
 }
-
-
-
 .nav__logo,
 .nav__toggle {
   color: var(--title-color);
