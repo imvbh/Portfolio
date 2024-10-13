@@ -265,6 +265,14 @@ img {
   padding-right: 0.75rem;
 }
 
+#toggleCatBtn {
+  font-size: 1.3rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+  color: var(--text-color);
+  padding-right: 0.75rem;
+}
+
 .active-link,
 .nav__link:hover {
   color: var(--title-color-dark);
@@ -926,7 +934,8 @@ img {
 }
 @media screen and (max-width: 992px) {
   .contact__container {
-    -webkit-column-gap: 3rem;
+    grid-template-columns: 2fr;
+
     column-gap: 3rem;
   }
 }
@@ -1072,10 +1081,16 @@ img {
   background-color: var(--title-color);
   color: var(--container-color);
 }
+
+.active-project {
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
 .project__container {
   gap: 3rem;
-  grid-template-columns: repeat(2, -webkit-max-content);
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(3, -webkit-max-content);
+  grid-template-columns: repeat(3, max-content);
   justify-content: center;
 }
 .project__card {
@@ -1136,10 +1151,17 @@ img {
     margin-bottom: 0.25rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .project__container {
-    grid-template-columns: -webkit-max-content;
-    grid-template-columns: max-content;
+    grid-template-columns: repeat(2, -webkit-max-content);
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .project__container {
+    grid-template-columns:  -webkit-max-content;
+    grid-template-columns:  max-content;
   }
 }
 @media screen and (max-width: 576px) {
