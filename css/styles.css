@@ -841,7 +841,11 @@ img {
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
   text-align: center;
-
+  text-wrap: wrap;
+  font-size: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+  vertical-align: middle;
 }
 
 .contact__titlep {
