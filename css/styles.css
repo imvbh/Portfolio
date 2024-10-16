@@ -638,6 +638,21 @@ img {
   column-gap: 0.5rem;
   display: flex;
 }
+.skills__progress {
+  width: 100px;
+  margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress__bar {
+  height: 5px;
+  background-color: #4CAF50; /* Change this color as per your theme */
+  border-radius: 5px;
+}
+
 .skills svg {
   color: var(--title-color);
   font-size: 1rem;
