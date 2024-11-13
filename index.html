@@ -12,7 +12,17 @@
 </head>
 
 <body data-new-gr-c-s-check-loaded="8.907.0" data-gr-ext-installed="">
-  <div id="root">
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-text">
+      <span data-text="I">I</span>
+      <span data-text="M">M</span>
+      <span data-text="V">V</span>
+      <span data-text="B">B</span>
+      <span data-text="H">H</span>
+    </div>
+  </div>
+
+  <div id="root" class="hidden-root">
     <header class="header">
       <nav class="nav container"><a href="index.html" class="nav__logo" data-reveal="top"><b>Vaibhav</b> Dhumale</a>
         <div class="nav__menu">
@@ -99,9 +109,10 @@
             </div>
 
           </div>
-          <div class="home__scroll"><a href="#about" class="home__scroll-button button--flex"><svg width="32px"
-                height="32px" class="home__scroll-mouse" viewBox="0 0 247 390" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          <div class="home__scroll" data-reveal="top" data-reveal-delay="0.5s"><a href="#about"
+              class="home__scroll-button button--flex"><svg width="32px" height="32px" class="home__scroll-mouse"
+                viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
                 style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
                 <path class="wheel" d="M123.359,79.775l0,72.843"
                   style="fill: none; stroke: var(--title-color); stroke-width: 20px;"></path>
@@ -117,7 +128,8 @@
         </div>
       </section>
       <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2><span class="section__subtitle">A short introduction</span>
+        <h2 class="section__title" data-reveal="top" data-reveal-delay="0.25s">About Me</h2><span
+          class="section__subtitle" data-reveal="top" data-reveal-delay="0.25s">A short introduction</span>
         <div class="about__container container grid" data-reveal="top"><img src="assets/freelancer-banner.png"
             alt="about" class="about__img">
           <div class="about__data">
@@ -361,7 +373,7 @@
               </div>
             </div>
           </div>
-          
+
           <!-- <div class="skills__content" data-reveal="top" data-reveal-delay="0.5s">
             <h3 class="skills__title">Tools & Software</h3>
             <div class="skills__box">
@@ -501,8 +513,8 @@
                 </svg></div>
             </a>
 
-            <a class="project__card" href="https://imvbh.github.io/StartPoint-Custom-Homepage/" data-category="all websites"><img
-                class="project__img" src="assets/Sttp.png" alt="">
+            <a class="project__card" href="https://imvbh.github.io/StartPoint-Custom-Homepage/"
+              data-category="all websites"><img class="project__img" src="assets/Sttp.png" alt="">
               <h3 class="project__title">Sttp:// - A Custom Home Page</h3>
               <div class="project__button">Demo <svg stroke="currentColor" fill="none" stroke-width="0"
                   viewBox="0 0 24 24" class="project__button-icon" height="1em" width="1em"
@@ -545,15 +557,15 @@
             </a>
 
             <a class="project__card" href="https://imvbh.github.io/SnakeGame/" data-category="all websites games"><img
-              class="project__img" src="assets/SnakeGame.png" alt="">
-            <h3 class="project__title">Snake Game</h3>
-            <div class="project__button">Demo <svg stroke="currentColor" fill="none" stroke-width="0"
-                viewBox="0 0 24 24" class="project__button-icon" height="1em" width="1em"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6">
-                </path>
-              </svg></div>
-          </a>
+                class="project__img" src="assets/SnakeGame.png" alt="">
+              <h3 class="project__title">Snake Game</h3>
+              <div class="project__button">Demo <svg stroke="currentColor" fill="none" stroke-width="0"
+                  viewBox="0 0 24 24" class="project__button-icon" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6">
+                  </path>
+                </svg></div>
+            </a>
 
           </div>
         </div>
@@ -679,6 +691,18 @@
       loopCount: Infinity,
     });
   </script>
+
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        document.getElementById('loadingScreen').style.display = 'none';
+
+        document.getElementById('root').classList.remove('hidden-root');
+      }, 250);
+    };
+
+  </script>
+
   <script defer="defer" src="./js/script.js"></script>
   <script src="js/oneko.js"></script>
   <script src="js/script.js"></script>
