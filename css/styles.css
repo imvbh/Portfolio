@@ -1197,6 +1197,7 @@ img {
   justify-content: center;
 }
 .project__card {
+  width: 23vw;
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
@@ -1207,19 +1208,44 @@ img {
   margin-bottom: var(--mb-1);
   width: 295px;
 }
+
 .project__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-0-5);
+}
+
+.project__button {
+  background-color: var(--text-color);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  width: 5rem;
+  align-items: center;
+  color: white;
+  -webkit-column-gap: 0.25rem;
+  column-gap: 0.25rem;
+  display: flex;
+  font-weight: bold;
+  font-size: var(--small-font-size);
+}
+
+.project__details {
+  text-wrap: wrap;
+  color: var(--text-color);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-5);
 }
-.project__button {
-  align-items: center;
-  color: var(--text-color);
-  -webkit-column-gap: 0.25rem;
-  column-gap: 0.25rem;
-  display: flex;
-  font-size: var(--small-font-size);
+
+.project__card:hover .word_highlight {
+  border-radius: 0.25rem;
+  padding: 0 0.25rem;
+  background-image: linear-gradient(110deg, #405de6, #f32626, #ffdc80);
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
+
 .project__button-icon {
   font-size: 1rem;
   transition: 0.4s;
@@ -1230,7 +1256,6 @@ img {
 }
 
 .project__card:hover .project__img{
-  
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
   transition: ease-in-out 0.2s;
