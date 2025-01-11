@@ -1206,7 +1206,8 @@ img {
 .project__img {
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
-  width: 295px;
+  width: 100%
+
 }
 
 .project__title {
@@ -1295,18 +1296,15 @@ img {
     grid-template-columns:  -webkit-max-content;
     grid-template-columns:  max-content;
   }
-  .project__card {
-    width: 55vw;
-  }
-}
-@media screen and (max-width: 576px) {
 
   .project__img {
     width: 100%;
   }
-
-
+  .project__card {
+    width: 75vw;
+  }
 }
+
 @media screen and (max-width: 350px) {
   .project__item {
     font-size: var(--small-font-size);
