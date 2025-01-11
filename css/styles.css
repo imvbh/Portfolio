@@ -1267,7 +1267,7 @@ img {
 }
 @media screen and (max-width: 992px) {
   .project__container {
-    gap: 1.25rem;
+    gap: 1.75rem;
   }
   .project__card {
     padding: 1rem;
@@ -1284,6 +1284,10 @@ img {
     grid-template-columns: repeat(2, -webkit-max-content);
     grid-template-columns: repeat(2, max-content);
   }
+
+  .project__card {
+    width: 35vw;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -1291,14 +1295,17 @@ img {
     grid-template-columns:  -webkit-max-content;
     grid-template-columns:  max-content;
   }
+  .project__card {
+    width: 55vw;
+  }
 }
 @media screen and (max-width: 576px) {
-  .project__container {
-    grid-template-columns: 1fr;
-  }
+
   .project__img {
     width: 100%;
   }
+
+
 }
 @media screen and (max-width: 350px) {
   .project__item {
